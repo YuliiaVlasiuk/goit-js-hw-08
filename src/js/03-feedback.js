@@ -23,8 +23,8 @@ if (savedParametrs) {
   result.message = refs.message.value;
 }
 
-refs.email.addEventListener('input', throttle(onInputEmail,500));
-refs.message.addEventListener('input', throttle(onInputMessage,500));
+refs.email.addEventListener('input', onInputEmail);
+refs.message.addEventListener('input', onInputMessage);
 refs.form.addEventListener('submit', onSubmit);
 
 function onInputEmail(evt) {
