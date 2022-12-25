@@ -29,7 +29,7 @@ refs.form.addEventListener('submit', onSubmit);
 
 function onInputEmail(evt) {
   result.email = evt.currentTarget.value;
-  localStorage.setItem(FNAME_OF_KEY, JSON.stringify(result));
+  localStorage.setItem(NAME_OF_KEY, JSON.stringify(result));
 }
 
 function onInputMessage(evt) {
